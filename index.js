@@ -17,6 +17,9 @@ class Driver {
             }.bind(this)
         );
     }
+    passengers() {
+        return store.trips.passengers.map(trip => trip.passenger);
+    }
 }
 
 let passengerId = 0;
