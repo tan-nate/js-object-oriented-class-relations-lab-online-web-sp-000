@@ -12,21 +12,14 @@ class Driver {
     }
 }
 
-let itemId = 0;
+let passengerId = 0;
 
 class Passenger {
     constructor(name) {
         this.id = ++itemId;
         this.name = name;
-        this.price = price;
-        if (user) {
-            this.userId = user.id;
-        }
 
         // insert in the item to the store
-        store.items.push(this);
-    }
-    setUser(user) {
-        this.userId = user.id;
+        store.passengers.push(this);
     }
 }
