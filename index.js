@@ -35,4 +35,11 @@ class Trip {
         // insert in the item to the store
         store.trips.push(this);
     }
+    passenger() {
+        return store.passengers.find(
+            function(passenger) {
+                return passenger.id === this.passengerId;
+            }.bind(this)
+        );
+    }
 }
