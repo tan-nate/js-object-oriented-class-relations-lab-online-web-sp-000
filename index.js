@@ -16,7 +16,7 @@ let passengerId = 0;
 
 class Passenger {
     constructor(name) {
-        this.id = ++itemId;
+        this.id = ++passengerId;
         this.name = name;
 
         // insert in the item to the store
