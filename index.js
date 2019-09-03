@@ -32,6 +32,16 @@ class Passenger {
         // insert in the item to the store
         store.passengers.push(this);
     }
+    trips() {
+        return store.trips.filter(
+            function(trip) {
+                return trip.passengerId === this.id;
+            }.bind(this)
+        );
+    }
+    drivers() {
+        return store.trips.map(trip => trip.driver());
+    }
 }
 
 let tripId = 0;
